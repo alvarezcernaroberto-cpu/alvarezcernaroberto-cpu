@@ -1,6 +1,6 @@
 <div align="center">
 
-![gamer-dev — pared de ladrillo oscuro y esfera de neón verde](assets/banner.svg?v=2)
+![gamer-dev — setup con esfera Xbox de neón verde, monitor con código y gráficas](assets/github-banner-foto.gif)
 
 # gamer-dev
 
