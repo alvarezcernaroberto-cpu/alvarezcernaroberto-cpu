@@ -1,32 +1,134 @@
-# Roberto Carlos Alvarez Cerna
-**Desarrollador de Software · Celaya, Guanajuato**
+<div align="center">
 
-Estudié Administración en el TecNM de Celaya (2024), pero mi carrera giró hacia el desarrollo de software. Actualmente trabajo en Hutchinson Autopartes de México, donde diseñé, desarrollé y desplegué desde cero la plataforma web interna que centraliza la operación diaria de la planta.
+![gamer-dev — pared de ladrillo oscuro y esfera de neón verde](assets/banner.svg)
 
-## Plataforma de Gestión de Planta (Hutchinson)
-Sistema web desarrollado con **Python (Flask)** y **PostgreSQL**, desplegado en producción con acceso estable para personal operativo, caseta y pantallas Andon.
+# gamer-dev
 
-* **Producción:** Control de operaciones (ensamble, estampado, láser, moldeo, verificación de rosca) y matrices de polivalencia por nivel (A1–A4).
-* **Calidad y Mantenimiento:** Auditorías, control documental y gestión de equipos.
-* **Logística y Planeación:** Picking, control de inventario, listas operativas y seguimiento de producción.
-* **RH y Seguridad:** Expedientes de personal, registro de entrenamientos y control de accesos en caseta.
-* **Indicadores:** Dashboards en tiempo real por área.
+**Roberto Carlos Alvarez Cerna · Desarrollador de Software · Celaya, Guanajuato**
 
-**Arquitectura y funcionalidades clave:** Control de acceso basado en roles (RBAC), auditoría mediante logs, carga masiva desde Excel, generación automatizada de formatos en PDF y respaldos programados de la base de datos.
+> Construyo sistemas que la planta usa todos los días.
+> Juego para pensar distinto, programo para resolver lo concreto.
 
-## Stack Tecnológico
-* **Backend y Datos:** Python (Flask, SQLAlchemy, Waitress), PostgreSQL, SQL.
-* **Frontend:** HTML, CSS, JavaScript.
-* **Reportes y Automatización:** ReportLab, openpyxl, Excel avanzado.
-* **Ecosistema Microsoft:** Power Apps, Power Automate, Power BI, SharePoint.
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Power Platform](https://img.shields.io/badge/Power_Platform-107C10?style=flat-square&logo=microsoftpowerapps&logoColor=white)](https://powerplatform.microsoft.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-alvarezcernaroberto--cpu-111827?style=flat-square&logo=github&logoColor=white)](https://github.com/alvarezcernaroberto-cpu)
 
-## Proyecto Personal: Baird
+</div>
+
+---
+
+## Sobre mí
+
+Estudié Administración en el TecNM de Celaya (2024) y mi carrera giró hacia el desarrollo de software. Hoy soy **Desarrollador de Software en Hutchinson Autopartes de México**, donde diseñé, desarrollé y desplegué desde cero la plataforma web interna que centraliza la operación diaria de la planta.
+
+No colecciono proyectos de adorno: me interesa el software que se abre cada mañana, lo usa gente real y tiene que seguir funcionando.
+
+**Ahora mismo:**
+- Desarrollador de Software — Hutchinson Autopartes de México *(2026 – Actualidad)*
+- Antes: Desarrollador de Software (Power Platform) *(Jul 2025 – Feb 2026)* y Prácticas en Capacitación y Desarrollo Organizacional *(Jun 2024 – Jul 2025)*
+- Proyecto personal en curso: **Baird**, mi asistente con IA que corre en local
+- Disponibilidad para reubicación · Celaya, Guanajuato
+
+<!-- FOTO PERSONAL — opcional, descomenta cuando subas tu foto
+<div align="center">
+  <img src="assets/hero.jpg" alt="Roberto frente a la esfera de neón verde, con control y audífonos al cuello" width="420">
+  <br>
+  <em>La foto de la esfera verde: ese es el punto de partida visual de este repo.</em>
+</div>
+
+Guarda tu foto como `assets/hero.jpg` (vertical, máx. 1200 px de ancho, < 500 KB).
+Ver `assets/README.md` para el recorte y la compresión recomendados.
+-->
+
+---
+
+## Stack
+
+| Área | Tecnologías |
+| --- | --- |
+| **Backend y datos** | Python (Flask, SQLAlchemy, Waitress), PostgreSQL, SQL |
+| **Frontend** | HTML, CSS, JavaScript |
+| **Reportes y automatización** | ReportLab, openpyxl, Excel avanzado |
+| **Ecosistema Microsoft** | Power Apps, Power Automate, Power BI, SharePoint |
+| **En práctica** | Git, GitHub, Cloudflare Tunnel, SQLite, Telegram Bot API |
+
+---
+
+## Proyectos destacados
+
+| Proyecto | Qué hace | Stack | Estado |
+| --- | --- | --- | --- |
+| **Plataforma de gestión de planta** | Sistema web interno que centraliza la operación diaria: producción, calidad, logística, RH y seguridad, con dashboards en tiempo real | Python · Flask · PostgreSQL | En producción |
+| **Baird** | Asistente personal con IA en local, con Telegram y Alexa, memoria persistente y enrutamiento por niveles para optimizar costo y latencia | Python · Gemini · Claude · OpenRouter / Groq · SQLite | En desarrollo activo |
+
+Detalles por proyecto en [`projects/`](projects/).
+
+### Plataforma de gestión de planta — por área
+
+- **Producción:** control de operaciones (ensamble, estampado, láser, moldeo, verificación de rosca) y matrices de polivalencia por nivel (A1–A4).
+- **Calidad y mantenimiento:** auditorías, control documental y gestión de equipos.
+- **Logística y planeación:** picking, control de inventario, listas operativas y seguimiento de producción.
+- **RH y seguridad:** expedientes de personal, registro de entrenamientos y control de accesos en caseta.
+- **Indicadores:** dashboards en tiempo real por área.
+
+**Arquitectura y funcionalidades clave:** control de acceso basado en roles (RBAC), auditoría mediante logs, carga masiva desde Excel, generación automatizada de formatos en PDF y respaldos programados de la base de datos.
+
+> Nota: por ser un sistema interno de la empresa, aquí se describe en términos generales. El código interno no se publica en este repo.
+
+### Baird
+
 Asistente personal con IA ejecutado en local, con integraciones para Telegram y Alexa y persistencia de memoria. Utiliza un esquema de enrutamiento de modelos por niveles (Gemini, Claude, OpenRouter/Groq) para optimizar costos y latencia según la complejidad de la tarea. Actualmente estoy reescribiendo su arquitectura alrededor de un orquestador que decide qué herramienta ejecutar en cada petición.
 
-## Experiencia
-* **Desarrollador de Software** — Hutchinson Autopartes de México *(2026 – Actualidad)*
-* **Desarrollador de Software (Power Platform)** — Hutchinson Autopartes de México *(Jul 2025 – Feb 2026)*
-* **Prácticas Profesionales (Capacitación y Desarrollo Organizacional)** — Hutchinson Autopartes de México *(Jun 2024 – Jul 2025)*
+---
+
+## Cómo está organizado este repo
+
+```
+gamer-dev/
+├── README.md                 # Esta página: presentación, stack y proyectos
+├── DESIGN.md                 # Paleta, tipografía y reglas visuales
+├── assets/
+│   ├── banner.svg            # Banner principal: ladrillo oscuro + esfera neón
+│   ├── banner.webp           # Versión fotorrealista (opcional, subida manual)
+│   ├── gamer-dev-badge.svg   # Sello gamer-dev
+│   └── hero.jpg              # Tu foto (la agregas tú, ver assets/README.md)
+└── projects/
+    ├── README.md
+    ├── plataforma-gestion-planta/
+    └── baird/
+```
+
+Reglas que sigue todo el repo: fondo oscuro `#0D1117`, verde neón solo como acento (`#107C10` / `#22C55E`, `#39FF14` solo en detalles), badges en `flat-square`, tablas con la misma jerarquía y nada de verde saturado en bloques grandes. El detalle completo está en [`DESIGN.md`](DESIGN.md).
+
+---
+
+## Estadísticas
+
+<div align="center">
+
+[![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=alvarezcernaroberto-cpu&show_icons=true&theme=dark&bg_color=0D1117&title_color=22C55E&icon_color=22C55E&text_color=E6EDF3&border_color=30363D)](https://github.com/alvarezcernaroberto-cpu)
+[![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=alvarezcernaroberto-cpu&layout=compact&theme=dark&bg_color=0D1117&title_color=22C55E&text_color=E6EDF3&border_color=30363D)](https://github.com/alvarezcernaroberto-cpu)
+
+</div>
+
+---
 
 ## Contacto
-alvarezcernaroberto@gmail.com · Celaya, Guanajuato *(disponibilidad para reubicación)*
+
+- **Email:** alvarezcernaroberto@gmail.com
+- **GitHub:** [@alvarezcernaroberto-cpu](https://github.com/alvarezcernaroberto-cpu)
+- **Ubicación:** Celaya, Guanajuato — disponibilidad para reubicación
+
+Si tienes un proyecto, una vacante o una idea de automatización, escríbeme. Respondo con lo concreto, no con discurso.
+
+---
+
+<div align="center">
+
+![gamer-dev](assets/gamer-dev-badge.svg)
+
+`gamer-dev` · hecho con Python, café y partidas que terminan en “una más y ya”.
+
+</div>

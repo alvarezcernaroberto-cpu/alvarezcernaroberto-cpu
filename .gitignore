@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Fotos originales sin comprimir (sube solo assets/hero.jpg ya optimizada)
+assets/*.png
+assets/*.tif
+assets/*.heic
+!assets/banner.webp
+
+# Secretos — nunca en Git
+.env
+*.pem
+*.key
+credentials.json
+secrets/
