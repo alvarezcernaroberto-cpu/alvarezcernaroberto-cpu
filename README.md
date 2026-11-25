@@ -72,10 +72,7 @@ Detalles por proyecto en [`projects/`](projects/).
 
 Asistente personal con IA ejecutado en local, con integraciones para Telegram y Alexa y persistencia de memoria. Utiliza un esquema de enrutamiento de modelos por niveles (Gemini, Claude, OpenRouter/Groq) para optimizar costos y latencia según la complejidad de la tarea. Actualmente estoy reescribiendo su arquitectura alrededor de un orquestador que decide qué herramienta ejecutar en cada petición.
 
-```
 
-
-```
 
 ---
 
