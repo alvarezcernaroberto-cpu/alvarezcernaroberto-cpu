@@ -31,16 +31,7 @@ No colecciono proyectos de adorno: me interesa el software que se abre cada mañ
 - Proyecto personal en curso: **Baird**, mi asistente con IA que corre en local
 - Disponibilidad para reubicación · Celaya, Guanajuato
 
-<!-- FOTO PERSONAL — opcional, descomenta cuando subas tu foto
-<div align="center">
-  <img src="assets/hero.jpg" alt="Roberto frente a la esfera de neón verde, con control y audífonos al cuello" width="420">
-  <br>
-  <em>La foto de la esfera verde: ese es el punto de partida visual de este repo.</em>
-</div>
 
-Guarda tu foto como `assets/hero.jpg` (vertical, máx. 1200 px de ancho, < 500 KB).
-Ver `assets/README.md` para el recorte y la compresión recomendados.
--->
 
 ---
 
@@ -81,23 +72,6 @@ Detalles por proyecto en [`projects/`](projects/).
 
 Asistente personal con IA ejecutado en local, con integraciones para Telegram y Alexa y persistencia de memoria. Utiliza un esquema de enrutamiento de modelos por niveles (Gemini, Claude, OpenRouter/Groq) para optimizar costos y latencia según la complejidad de la tarea. Actualmente estoy reescribiendo su arquitectura alrededor de un orquestador que decide qué herramienta ejecutar en cada petición.
 
----
-
-## Cómo está organizado este repo
-
-```
-gamer-dev/
-├── README.md                 # Esta página: presentación, stack y proyectos
-├── DESIGN.md                 # Paleta, tipografía y reglas visuales
-├── assets/
-│   ├── banner.svg            # Banner principal: ladrillo oscuro + esfera neón
-│   ├── banner.webp           # Versión fotorrealista (opcional, subida manual)
-│   ├── gamer-dev-badge.svg   # Sello gamer-dev
-│   └── hero.jpg              # Tu foto (la agregas tú, ver assets/README.md)
-└── projects/
-    ├── README.md
-    ├── plataforma-gestion-planta/
-    └── baird/
 ```
 
 Reglas que sigue todo el repo: fondo oscuro `#0D1117`, verde neón solo como acento (`#107C10` / `#22C55E`, `#39FF14` solo en detalles), badges en `flat-square`, tablas con la misma jerarquía y nada de verde saturado en bloques grandes. El detalle completo está en [`DESIGN.md`](DESIGN.md).
