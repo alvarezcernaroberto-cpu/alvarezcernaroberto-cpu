@@ -24,12 +24,38 @@
   </defs>
   <rect width="1600" height="500" fill="url(#brick)"/>
   <rect y="380" width="1600" height="120" fill="url(#floor)"/>
-  <circle cx="1240" cy="230" r="260" fill="url(#glow)"/>
-  <circle cx="1240" cy="230" r="165" fill="url(#sphere)"/>
-  <ellipse cx="1180" cy="180" rx="70" ry="38" fill="#FFFFFF" opacity="0.18"/>
-  <ellipse cx="1240" cy="430" rx="180" ry="26" fill="#22C55E" opacity="0.28"/>
-  <ellipse cx="1240" cy="430" rx="110" ry="16" fill="#39FF14" opacity="0.35"/>
-  <circle cx="1020" cy="120" r="4" fill="#22C55E" opacity="0.6"/>
-  <circle cx="1080" cy="330" r="3" fill="#39FF14" opacity="0.5"/>
-  <circle cx="1450" cy="110" r="3" fill="#22C55E" opacity="0.5"/>
+
+  <!-- glow de la esfera: respira -->
+  <circle cx="1240" cy="230" r="260" fill="url(#glow)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- esfera + brillo: flota suave -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="6s" repeatCount="indefinite"/>
+    <circle cx="1240" cy="230" r="165" fill="url(#sphere)"/>
+    <ellipse cx="1180" cy="180" rx="70" ry="38" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+
+  <!-- reflejo en el piso: late con la esfera -->
+  <ellipse cx="1240" cy="430" rx="180" ry="26" fill="#22C55E" opacity="0.28">
+    <animate attributeName="opacity" values="0.28;0.4;0.28" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1240" cy="430" rx="110" ry="16" fill="#39FF14" opacity="0.35">
+    <animate attributeName="opacity" values="0.35;0.48;0.35" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- partículas: parpadean y derivan -->
+  <circle cx="1020" cy="120" r="4" fill="#22C55E" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -12; 0 0" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="330" r="3" fill="#39FF14" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" begin="1s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="6s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1450" cy="110" r="3" fill="#22C55E" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.12;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.5s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
 </svg>
