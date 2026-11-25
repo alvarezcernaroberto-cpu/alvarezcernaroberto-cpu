@@ -1,6 +1,6 @@
 <div align="center">
 
-![gamer-dev — pared de ladrillo oscuro y esfera de neón verde](assets/banner.svg)
+![gamer-dev — pared de ladrillo oscuro y esfera de neón verde](assets/banner.svg?v=2)
 
 # gamer-dev
 
@@ -75,6 +75,7 @@ Asistente personal con IA ejecutado en local, con integraciones para Telegram y 
 ```
 
 Reglas que sigue todo el repo: fondo oscuro `#0D1117`, verde neón solo como acento (`#107C10` / `#22C55E`, `#39FF14` solo en detalles), badges en `flat-square`, tablas con la misma jerarquía y nada de verde saturado en bloques grandes. El detalle completo está en [`DESIGN.md`](DESIGN.md).
+```
 
 ---
 
